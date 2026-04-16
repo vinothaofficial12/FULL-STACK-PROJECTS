@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<h1>📊 Student Dashboard</h1>
+
+<div class="controls">
+  <select id="sort">
+    <option value="">Sort By</option>
+    <option value="name">Name</option>
+    <option value="dob">DOB</option>
+  </select>
+
+  <select id="department">
+    <option value="All">All Departments</option>
+    <option value="CSE">CSE</option>
+    <option value="ECE">ECE</option>
+    <option value="MECH">MECH</option>
+  </select>
+
+  <button onclick="loadStudents()">Apply</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Department</th>
+      <th>DOB</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody"></tbody>
+</table>
+
+<h2>📊 Students per Department</h2>
+<canvas id="myChart"></canvas>
+
+<script src="script.js"></script>
+
+</body>
+</html>
