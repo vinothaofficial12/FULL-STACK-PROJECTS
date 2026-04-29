@@ -1,0 +1,5 @@
+{
+  "name": "Spring-Inspired Employee Manager",
+  "description": "A TypeScript/React implementation of an Employee Management Module demonstrating IoC and DI concepts similar to Spring Core.",
+  "requestFramePermissions": []
+}
